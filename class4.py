@@ -1,3 +1,4 @@
+import sys
 
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -60,7 +61,7 @@ def plot_graphs(history, string):
 plot_graphs(history, 'accuracy')
 
 seed_text = "I've got a bad feeling about this"
-next_words = 100
+next_words = 10
 
 for _ in range(next_words):
     token_list = tokenizer.texts_to_sequences([seed_text])[0]
